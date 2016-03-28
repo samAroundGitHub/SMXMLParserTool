@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SMXMLParserTool.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    // 可在.m文件开启关闭SMXMLLog打印
+    [SMXMLParserTool sm_toolWithURLString:@"http://wcf.open.cnblogs.com/news/hot/1" nodeName:@"entry" completeHandler:^(NSArray *contentArray, NSError *error) {
+        if (!error) {
+//            NSLog(contentArray);
+        }
+    }];
 }
 
 @end

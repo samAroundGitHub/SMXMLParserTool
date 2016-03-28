@@ -13,6 +13,7 @@
 		66ADA0771CA92C7400E84140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66ADA0751CA92C7400E84140 /* Main.storyboard */; };
 		66ADA0791CA92C7400E84140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66ADA0781CA92C7400E84140 /* Assets.xcassets */; };
 		66ADA07C1CA92C7400E84140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66ADA07A1CA92C7400E84140 /* LaunchScreen.storyboard */; };
+		66ADA0861CA92CAD00E84140 /* SMXMLParserTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ADA0851CA92CAD00E84140 /* SMXMLParserTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		66ADA0781CA92C7400E84140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66ADA07B1CA92C7400E84140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66ADA07D1CA92C7400E84140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66ADA0841CA92CAD00E84140 /* SMXMLParserTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLParserTool.h; sourceTree = "<group>"; };
+		66ADA0851CA92CAD00E84140 /* SMXMLParserTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLParserTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		66ADA06B1CA92C7400E84140 /* SMXMLParserToolExample */ = {
 			isa = PBXGroup;
 			children = (
+				66ADA0831CA92CAD00E84140 /* SMXMLParserTool */,
 				66ADA06F1CA92C7400E84140 /* AppDelegate.h */,
 				66ADA0701CA92C7400E84140 /* AppDelegate.m */,
 				66ADA0721CA92C7400E84140 /* ViewController.h */,
@@ -78,6 +82,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		66ADA0831CA92CAD00E84140 /* SMXMLParserTool */ = {
+			isa = PBXGroup;
+			children = (
+				66ADA0841CA92CAD00E84140 /* SMXMLParserTool.h */,
+				66ADA0851CA92CAD00E84140 /* SMXMLParserTool.m */,
+			);
+			path = SMXMLParserTool;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -150,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66ADA0861CA92CAD00E84140 /* SMXMLParserTool.m in Sources */,
 				66ADA0741CA92C7400E84140 /* ViewController.m in Sources */,
 				66ADA0711CA92C7400E84140 /* AppDelegate.m in Sources */,
 				66ADA06E1CA92C7400E84140 /* main.m in Sources */,
